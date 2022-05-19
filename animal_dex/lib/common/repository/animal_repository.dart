@@ -23,7 +23,7 @@ class AnimalRepositoy implements IAnimalRepositoy {
       final list = json['animal'] as List<dynamic>;
       return list.map((e) => Animal.fromMap(e)).toList();
     } catch (e) {
-      throw Failure(message: 'Falha ao carregar');
+      throw Failure(message: 'Serviço indisponível!');
     }
   }
 }

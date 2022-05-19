@@ -1,3 +1,4 @@
 class ApiConsts {
-  static String animalApiURL = 'https://jsonplaceholder.typicode.com/users';
+  static String animalApiURL =
+      'https://raw.githubusercontent.com/eldermatheus/ProjetosMobile/master/animal.json';
 }

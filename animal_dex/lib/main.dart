@@ -1,5 +1,6 @@
 import 'package:animal_dex/common/repository/animal_repository.dart';
 import 'package:animal_dex/features/animaldex/screens/home/container/home_container.dart';
+import 'package:animal_dex/features/animaldex/screens/route.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -11,13 +12,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Animal Dex',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomeContainer(
+        title: 'Animal Dex',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+
+        // ignore: prefer_const_constructors
+        home: AnimalDexRoute(
+          repository: AnimalRepositoy(
+            dio: Dio(),
+          ),
+        )
+
+        /*home: HomeContainer(
         repositoy: AnimalRepositoy(dio: Dio()),
-      ),
-    );
+      ),*/
+        );
   }
 }
