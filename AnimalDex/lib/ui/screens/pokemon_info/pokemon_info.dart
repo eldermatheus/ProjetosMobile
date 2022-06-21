@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart' hide AnimatedSlide;
+import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pokedex/configs/colors.dart';
 import 'package:pokedex/configs/images.dart';
@@ -69,9 +70,9 @@ class _PokemonInfoState extends State<PokemonInfo> with TickerProviderStateMixin
       child: Scaffold(
         body: Stack(
           children: <Widget>[
-            _BackgroundDecoration(),
-            _PokemonInfoCard(),
-            _PokemonOverallInfo(),
+            _BackgroundDecoration(), // decoracao
+            _PokemonInfoCard(), // card inferior
+            _PokemonOverallInfo(), // card superior
           ],
         ),
       ),

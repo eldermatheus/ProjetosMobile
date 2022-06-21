@@ -100,11 +100,9 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         _buildAppBar(),
-        SizedBox(height: 9),
+        SizedBox(height: 2),
         _buildPokemonName(),
         SizedBox(height: 9),
-        _buildPokemonTypes(),
-        SizedBox(height: 25),
         _buildPokemonSlider(),
       ],
     );
@@ -216,7 +214,6 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
   Widget _buildPokemonSlider() {
     final screenSize = MediaQuery.of(context).size;
     final sliderHeight = screenSize.height * 0.24;
-    final pokeballSize = screenSize.height * 0.24;
     final pokemonSize = screenSize.height * 0.3;
 
     return AnimatedFade(
@@ -232,8 +229,6 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
                 turns: rotateController,
                 child: Image(
                   image: AppImages.pokeball,
-                  width: pokeballSize,
-                  height: pokeballSize,
                   color: Colors.white12,
                 ),
               ),
