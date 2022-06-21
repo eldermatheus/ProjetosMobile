@@ -10,12 +10,11 @@ class _HeaderCardContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      clipBehavior: Clip.hardEdge,
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
-      ),
-      child: PokeballBackground(
+        clipBehavior: Clip.hardEdge,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
+        ),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.start,
@@ -25,9 +24,7 @@ class _HeaderCardContent extends StatelessWidget {
             SearchBar(),
             _buildCategories(context),
           ],
-        ),
-      ),
-    );
+        ));
   }
 
   Widget _buildTitle() {
@@ -37,7 +34,7 @@ class _HeaderCardContent extends StatelessWidget {
         padding: EdgeInsets.all(28),
         alignment: Alignment.bottomLeft,
         child: Text(
-          'What Pokemon\nare you looking for?',
+          'Bem vindo ao \nAnimalDex',
           style: TextStyle(
             fontSize: 30,
             height: 1.6,

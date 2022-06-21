@@ -3,10 +3,9 @@ import 'package:pokedex/domain/entities/category.dart';
 import 'package:pokedex/routes.dart';
 
 const List<Category> categories = [
-  Category(name: 'Pokedex', color: AppColors.teal, route: Routes.pokedex),
-  Category(name: 'Moves', color: AppColors.red, route: Routes.pokedex),
-  Category(name: 'Abilities', color: AppColors.blue, route: Routes.pokedex),
-  Category(name: 'Items', color: AppColors.yellow, route: Routes.items),
-  Category(name: 'Locations', color: AppColors.purple, route: Routes.pokedex),
-  Category(name: 'Type Effects', color: AppColors.brown, route: Routes.typeEffects),
+  Category(name: 'Animalia', color: AppColors.red, route: Routes.pokedex),
+  Category(name: 'Plantae', color: AppColors.teal, route: Routes.pokedex),
+  Category(name: 'Fungi', color: AppColors.lightYellow, route: Routes.pokedex),
+  Category(name: 'Protoctista', color: AppColors.grey, route: Routes.pokedex),
+  Category(name: 'Monera', color: AppColors.purple, route: Routes.pokedex)
 ];

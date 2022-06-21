@@ -87,7 +87,7 @@ class _PokemonGridState extends State<_PokemonGrid> {
 
   Widget _buildLoading() {
     return Center(
-      child: Image(image: AppImages.pikloader),
+      child: Image(image: AppImages.load),
     );
   }
 
@@ -96,14 +96,14 @@ class _PokemonGridState extends State<_PokemonGrid> {
       slivers: [
         PokemonRefreshControl(onRefresh: _onRefresh),
         SliverPadding(
-          padding: EdgeInsets.all(28),
+          padding: EdgeInsets.all(10),
           sliver: NumberOfPokemonsSelector((numberOfPokemons) {
             return SliverGrid(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 1.4,
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
+                childAspectRatio: 1.0,
+                crossAxisSpacing: 5,
+                mainAxisSpacing: 5,
               ),
               delegate: SliverChildBuilderDelegate(
                 (_, index) {
@@ -124,11 +124,10 @@ class _PokemonGridState extends State<_PokemonGrid> {
             if (!canLoadMore) {
               return SizedBox.shrink();
             }
-
             return Container(
               padding: EdgeInsets.only(bottom: 28),
               alignment: Alignment.center,
-              child: Image(image: AppImages.pikloader),
+              child: Image(image: AppImages.load),
             );
           }),
         ),

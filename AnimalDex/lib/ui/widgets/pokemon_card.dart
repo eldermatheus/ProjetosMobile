@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pokedex/configs/images.dart';
 import 'package:pokedex/domain/entities/pokemon.dart';
 import 'package:pokedex/ui/widgets/pokemon_image.dart';
-import 'package:pokedex/ui/widgets/pokemon_type.dart';
 
 class PokemonCard extends StatelessWidget {
   static const double _pokeballFraction = 0.75;
@@ -44,10 +43,9 @@ class PokemonCard extends StatelessWidget {
                 highlightColor: Colors.white10,
                 child: Stack(
                   children: [
-                    _buildPokeballDecoration(height: itemHeight),
-                    _buildPokemon(height: itemHeight),
+                    _buildPokemon(height: itemHeight), // Foto do animal
                     _buildPokemonNumber(),
-                    _CardContent(pokemon),
+                    _CardContent(pokemon), // Nome do animal
                   ],
                 ),
               ),
@@ -55,21 +53,6 @@ class PokemonCard extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-
-  Widget _buildPokeballDecoration({required double height}) {
-    final pokeballSize = height * _pokeballFraction;
-
-    return Positioned(
-      bottom: -height * 0.13,
-      right: -height * 0.03,
-      child: Image(
-        image: AppImages.pokeball,
-        width: pokeballSize,
-        height: pokeballSize,
-        color: Colors.white.withOpacity(0.14),
-      ),
     );
   }
 
@@ -95,7 +78,7 @@ class PokemonCard extends StatelessWidget {
         style: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.bold,
-          color: Colors.black12,
+          color: Colors.white,
         ),
       ),
     );
@@ -123,7 +106,7 @@ class _CardContent extends StatelessWidget {
                 pokemon.name,
                 style: TextStyle(
                   fontSize: 14,
-                  height: 0.7,
+                  height: 0.1,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
@@ -143,7 +126,7 @@ class _CardContent extends StatelessWidget {
         .map(
           (type) => Padding(
             padding: EdgeInsets.only(bottom: 6),
-            child: PokemonType(type),
+//            child: PokemonType(type),
           ),
         )
         .toList();

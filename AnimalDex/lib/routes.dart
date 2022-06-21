@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pokedex/core/fade_page_route.dart';
 import 'package:pokedex/ui/screens/home/home.dart';
-import 'package:pokedex/ui/screens/items/items.dart';
 import 'package:pokedex/ui/screens/pokedex/pokedex.dart';
 import 'package:pokedex/ui/screens/pokemon_info/pokemon_info.dart';
 import 'package:pokedex/ui/screens/splash/splash.dart';
-import 'package:pokedex/ui/screens/types/type_screen.dart';
 
 enum Routes { splash, home, pokedex, pokemonInfo, typeEffects, items }
 
@@ -42,12 +40,6 @@ class AppNavigator {
 
       case _Paths.pokemonInfo:
         return FadeRoute(page: PokemonInfo());
-
-      case _Paths.typeEffectsScreen:
-        return FadeRoute(page: TypeEffectScreen());
-
-      case _Paths.itemsList:
-        return FadeRoute(page: ItemsScreen());
 
       case _Paths.home:
       default:

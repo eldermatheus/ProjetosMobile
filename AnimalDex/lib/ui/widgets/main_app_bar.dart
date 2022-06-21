@@ -14,7 +14,7 @@ class MainSliverAppBar extends SliverAppBar {
 
   MainSliverAppBar({
     GlobalKey? appBarKey,
-    String title = 'Pokedex',
+    String title = 'AnimalDex',
     double height = kToolbarHeight + mainAppbarPadding * 2,
     double expandedFontSize = 30,
     void Function()? onLeadingPress = AppNavigator.pop,
@@ -31,13 +31,6 @@ class MainSliverAppBar extends SliverAppBar {
             onPressed: onLeadingPress,
             icon: Icon(Icons.arrow_back, color: Colors.black),
           ),
-          actions: [
-            IconButton(
-              padding: EdgeInsets.symmetric(horizontal: mainAppbarPadding),
-              icon: Icon(Icons.favorite_border_outlined, color: Colors.black),
-              onPressed: onTrailingPress,
-            ),
-          ],
           flexibleSpace: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints) {
               final safeAreaTop = MediaQuery.of(context).padding.top;

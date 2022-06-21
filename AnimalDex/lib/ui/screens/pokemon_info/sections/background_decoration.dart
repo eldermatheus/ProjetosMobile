@@ -48,18 +48,6 @@ class _DottedDecoration extends StatelessWidget {
       ),
     );
   }
-
-  // const _DottedDecoration({
-  //   required Animation<double> animation,
-  // }) : super(
-  //         animation: animation,
-  //         child: const Image(
-  //           image: AppImages.dotted,
-  //           width: size.width,
-  //           height: size.height,
-  //           color: Colors.white30,
-  //         ),
-  //       );
 }
 
 class _BackgroundDecoration extends StatefulWidget {
@@ -90,7 +78,8 @@ class _BackgroundDecorationState extends State<_BackgroundDecoration> {
       return AnimatedContainer(
         duration: Duration(milliseconds: 300),
         constraints: BoxConstraints.expand(),
-        color: pokemon.color,
+        //color: pokemon.color,
+        color: Colors.lightGreen,
       );
     });
   }

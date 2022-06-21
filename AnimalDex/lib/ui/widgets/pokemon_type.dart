@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:pokedex/domain/entities/pokemon_types.dart';
 import 'package:pokedex/ui/widgets/spacer.dart';
 
@@ -60,3 +60,4 @@ class PokemonType extends StatelessWidget {
     );
   }
 }
+*/

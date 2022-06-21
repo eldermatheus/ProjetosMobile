@@ -15,7 +15,7 @@ class AppImages {
   static const female = _Image('female.png');
   static const dotted = _Image('dotted.png');
   static const thumbnail = _Image('thumbnail.png');
-  static const pikloader = _Image('pika_loader.gif');
+  static const load = _Image('load.gif');
 
   static Future precacheAssets(BuildContext context) async {
     await precacheImage(bulbasaur, context);
@@ -26,6 +26,6 @@ class AppImages {
     await precacheImage(female, context);
     await precacheImage(dotted, context);
     await precacheImage(thumbnail, context);
-    await precacheImage(pikloader, context);
+    await precacheImage(load, context);
   }
 }

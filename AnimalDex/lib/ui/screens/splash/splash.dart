@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:pokedex/configs/images.dart';
 import 'package:pokedex/routes.dart';
+import 'package:loading_gifs/loading_gifs.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -31,13 +32,13 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image(
-              image: AppImages.pikloader,
+              image: AppImages.load,
               width: _splashIconSize,
               height: _splashIconSize,
               fit: BoxFit.contain,
             ),
             Text(
-              'Pokedex',
+              'Animaldex',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 24,

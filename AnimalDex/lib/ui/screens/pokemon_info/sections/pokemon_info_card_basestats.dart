@@ -123,7 +123,7 @@ class _PokemonBaseStatsState extends State<_PokemonBaseStats> with SingleTickerP
             style: TextStyle(color: AppColors.black.withOpacity(0.6)),
           ),
           SizedBox(height: 15),
-          _buildEffectivenesses(pokemon.typeEffectiveness),
+          //_buildEffectivenesses(pokemon.typeEffectiveness),
         ],
       ),
     );
@@ -156,7 +156,7 @@ class _PokemonBaseStatsState extends State<_PokemonBaseStats> with SingleTickerP
     );
   }
 
-  Widget _buildEffectivenesses(Map<PokemonTypes, double> typeEffectiveness) {
+  /* Widget _buildEffectivenesses(Map<PokemonTypes, double> typeEffectiveness) {
     return Wrap(
       spacing: 8,
       runSpacing: 8,
@@ -171,5 +171,5 @@ class _PokemonBaseStatsState extends State<_PokemonBaseStats> with SingleTickerP
           )
           .toList(),
     );
-  }
+  } */
 }
