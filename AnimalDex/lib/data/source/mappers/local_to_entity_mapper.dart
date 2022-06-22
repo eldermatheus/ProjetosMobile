@@ -43,12 +43,3 @@ extension PokemonStatsHiveModelX on PokemonStatsHiveModel {
         speed: speed,
       );
 }
-
-/*extension ItemHiveModelX on ItemHiveModel {
-  Item toEntity({List<ItemHiveModel> evolutions = const []}) => Item(
-        name: name?.trim() ?? '',
-        category: name?.trim() ?? '',
-        image: imageurl?.trim() ?? '',
-        effect: effect?.trim() ?? '',
-      );
-}*/

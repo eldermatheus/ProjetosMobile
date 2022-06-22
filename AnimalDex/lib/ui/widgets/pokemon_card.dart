@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/configs/images.dart';
 import 'package:pokedex/domain/entities/pokemon.dart';
 import 'package:pokedex/ui/widgets/pokemon_image.dart';
 
 class PokemonCard extends StatelessWidget {
-  static const double _pokeballFraction = 0.75;
   static const double _pokemonFraction = 0.76;
 
   final Pokemon pokemon;
@@ -23,11 +21,11 @@ class PokemonCard extends StatelessWidget {
 
         return Container(
           decoration: BoxDecoration(
-            color: pokemon.color,
+            color: Colors.lightBlueAccent,
             borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(
-                color: pokemon.color.withOpacity(0.4),
+                color: Colors.lightBlueAccent.withOpacity(0.4),
                 blurRadius: 15,
                 offset: Offset(0, 8),
               ),
@@ -36,7 +34,7 @@ class PokemonCard extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Material(
-              color: pokemon.color,
+              color: Colors.lightBlueAccent,
               child: InkWell(
                 onTap: onPress,
                 splashColor: Colors.white10,

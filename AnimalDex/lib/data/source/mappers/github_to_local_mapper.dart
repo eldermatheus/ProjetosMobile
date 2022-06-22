@@ -32,12 +32,3 @@ extension GithubPokemonModelToLocalX on GithubPokemonModel {
     ..evolutions = evolutions
     ..evolutionReason = reason ?? '';
 }
-
-/*extension GithubItemModelToLocalX on GithubItemModel {
-  ItemHiveModel toHiveModel() => ItemHiveModel()
-    ..name = name.trim()
-    ..category = category.trim()
-    ..imageurl = imageurl.trim()
-    ..effect = effect.trim();
-}
-*/
