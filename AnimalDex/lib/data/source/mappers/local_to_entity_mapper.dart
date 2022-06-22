@@ -1,4 +1,3 @@
-import 'package:pokedex/data/source/local/models/item.dart';
 import 'package:pokedex/data/source/local/models/pokemon.dart';
 import 'package:pokedex/data/source/local/models/pokemon_gender.dart';
 import 'package:pokedex/data/source/local/models/pokemon_stats.dart';
@@ -45,11 +44,11 @@ extension PokemonStatsHiveModelX on PokemonStatsHiveModel {
       );
 }
 
-extension ItemHiveModelX on ItemHiveModel {
+/*extension ItemHiveModelX on ItemHiveModel {
   Item toEntity({List<ItemHiveModel> evolutions = const []}) => Item(
         name: name?.trim() ?? '',
         category: name?.trim() ?? '',
         image: imageurl?.trim() ?? '',
         effect: effect?.trim() ?? '',
       );
-}
+}*/

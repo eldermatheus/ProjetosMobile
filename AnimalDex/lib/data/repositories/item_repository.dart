@@ -1,4 +1,4 @@
-import 'package:pokedex/data/source/github/github_datasource.dart';
+/*import 'package:pokedex/data/source/github/github_datasource.dart';
 import 'package:pokedex/data/source/local/local_datasource.dart';
 import 'package:pokedex/data/source/mappers/github_to_local_mapper.dart';
 import 'package:pokedex/data/source/mappers/local_to_entity_mapper.dart';
@@ -24,7 +24,7 @@ class ItemDefaultRepository extends ItemRepository {
       final itemGithubModel = await githubDataSource.getItems();
       final itemHiveModels = itemGithubModel.map((e) => e.toHiveModel());
 
-      await localDataSource.saveItems(itemHiveModels);
+       await localDataSource.saveItems(itemHiveModels);
     }
 
     final itemHiveModels = await localDataSource.getAllItems();
@@ -38,10 +38,10 @@ class ItemDefaultRepository extends ItemRepository {
     final hasCachedData = await localDataSource.hasItemData();
 
     if (!hasCachedData) {
-      final itemGithubModels = await githubDataSource.getItems();
-      final itemHiveModels = itemGithubModels.map((e) => e.toHiveModel());
+      // final itemGithubModels = await githubDataSource.getItems();
+      //final itemHiveModels = itemGithubModels.map((e) => e.toHiveModel());
 
-      await localDataSource.saveItems(itemHiveModels);
+      //await localDataSource.saveItems(itemHiveModels);
     }
 
     final itemHiveModels = await localDataSource.getItems(
@@ -53,3 +53,4 @@ class ItemDefaultRepository extends ItemRepository {
     return itemEntities;
   }
 }
+*/

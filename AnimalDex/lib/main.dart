@@ -44,12 +44,12 @@ void main() async {
           ),
         ),
 
-        RepositoryProvider<ItemRepository>(
+        /*  RepositoryProvider<ItemRepository>(
           create: (context) => ItemDefaultRepository(
             localDataSource: context.read<LocalDataSource>(),
             githubDataSource: context.read<GithubDataSource>(),
           ),
-        ),
+        ), */
       ],
       child: MultiBlocProvider(
         providers: [
@@ -59,10 +59,10 @@ void main() async {
           BlocProvider<PokemonBloc>(
             create: (context) => PokemonBloc(context.read<PokemonRepository>()),
           ),
-          BlocProvider<ItemBloc>(
+          /* BlocProvider<ItemBloc>(
             create: (context) => ItemBloc(context.read<ItemRepository>()),
           ),
-
+ */
         ],
         child: PokedexApp(),
       ),

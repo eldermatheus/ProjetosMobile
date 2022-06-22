@@ -1,4 +1,4 @@
-import 'package:pokedex/core/usecase.dart';
+/*import 'package:pokedex/core/usecase.dart';
 import '../../data/repositories/item_repository.dart';
 import '../entities/item.dart';
 
@@ -12,3 +12,4 @@ class GetItemUseCase extends NoParamsUseCase<List<Item>> {
     return repository.getAllItems();
   }
 }
+*/

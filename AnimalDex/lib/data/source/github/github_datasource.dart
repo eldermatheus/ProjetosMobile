@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:pokedex/core/network.dart';
-import 'package:pokedex/data/source/github/models/item.dart';
+
 import 'package:pokedex/data/source/github/models/pokemon.dart';
 
 class GithubDataSource {
@@ -25,12 +25,12 @@ class GithubDataSource {
     return data;
   }
 
-  Future<List<GithubItemModel>> getItems() async {
+  /*Future<List<GithubItemModel>> getItems() async {
     final response = await networkManager.request(RequestMethod.get, itemsURL);
 
     final data =
         (json.decode(response.data) as List).map((item) => GithubItemModel.fromJson(item)).toList();
 
     return data;
-  }
+  }*/
 }
