@@ -21,7 +21,7 @@ class PokemonCard extends StatelessWidget {
 
         return Container(
           decoration: BoxDecoration(
-            color: Colors.lightBlueAccent,
+            //color: Colors.blue,
             borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(
@@ -34,7 +34,7 @@ class PokemonCard extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: Material(
-              color: Colors.lightBlueAccent,
+              color: Colors.lightBlue, // Cor do card
               child: InkWell(
                 onTap: onPress,
                 splashColor: Colors.white10,
