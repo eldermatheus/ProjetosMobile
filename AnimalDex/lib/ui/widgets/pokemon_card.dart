@@ -111,22 +111,9 @@ class _CardContent extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            ..._buildTypes(context),
           ],
         ),
       ),
     );
-  }
-
-  List<Widget> _buildTypes(BuildContext context) {
-    return pokemon.types
-        .take(2)
-        .map(
-          (type) => Padding(
-            padding: EdgeInsets.only(bottom: 6),
-//            child: PokemonType(type),
-          ),
-        )
-        .toList();
   }
 }

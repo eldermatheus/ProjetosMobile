@@ -83,7 +83,6 @@ class _PokemonAbout extends StatelessWidget {
           SizedBox(height: 28),
           _buildHeightWeight(pokemon.height, pokemon.weight),
           SizedBox(height: 31),
-          _buildBreeding(pokemon.gender, pokemon.eggGroups),
           SizedBox(height: 35),
           _buildLocation(),
           SizedBox(height: 26),
@@ -139,44 +138,6 @@ class _PokemonAbout extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  Widget _buildBreeding(PokemonGender gender, List<String> eggGroups) {
-    return _ContentSection(
-      label: 'Breeding',
-      children: [
-        Row(
-          children: <Widget>[
-            Expanded(child: _Label('Gender')),
-            if (gender.genderless)
-              Expanded(
-                flex: 3,
-                child: Text('Genderless', style: TextStyle(height: 0.8)),
-              )
-            else ...[
-              Expanded(
-                child: _TextIcon(AppImages.male, '${gender.male}%'),
-              ),
-              Expanded(
-                flex: 2,
-                child: _TextIcon(AppImages.female, '${gender.female}%'),
-              ),
-            ],
-          ],
-        ),
-        SizedBox(height: 18),
-        Row(
-          children: <Widget>[
-            Expanded(child: _Label('Egg Groups')),
-            Expanded(
-              flex: 2,
-              child: Text(eggGroups.join(', '), style: TextStyle(height: 0.8)),
-            ),
-            Expanded(flex: 1, child: SizedBox()),
-          ],
-        ),
-      ],
     );
   }
 

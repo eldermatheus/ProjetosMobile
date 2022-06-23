@@ -107,7 +107,7 @@ class _PokemonBaseStatsState extends State<_PokemonBaseStats> with SingleTickerP
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          buildStats(pokemon.stats),
+          //buildStats(pokemon.stats),
           SizedBox(height: 27),
           Text(
             'Type defenses',
@@ -128,48 +128,4 @@ class _PokemonBaseStatsState extends State<_PokemonBaseStats> with SingleTickerP
       ),
     );
   }
-
-  Widget buildStats(PokemonStats stats) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Stat(animation: _progressAnimation, label: 'Hp', value: stats.hp),
-        SizedBox(height: 14),
-        Stat(animation: _progressAnimation, label: 'Atttack', value: stats.attack),
-        SizedBox(height: 14),
-        Stat(animation: _progressAnimation, label: 'Defense', value: stats.defense),
-        SizedBox(height: 14),
-        Stat(animation: _progressAnimation, label: 'Sp. Atk', value: stats.specialAttack),
-        SizedBox(height: 14),
-        Stat(animation: _progressAnimation, label: 'Sp. Def', value: stats.specialDefense),
-        SizedBox(height: 14),
-        Stat(animation: _progressAnimation, label: 'Speed', value: stats.speed),
-        SizedBox(height: 14),
-        Stat(
-          animation: _progressAnimation,
-          label: 'Total',
-          value: stats.total,
-          progress: stats.total / 600,
-        ),
-      ],
-    );
-  }
-
-  /* Widget _buildEffectivenesses(Map<PokemonTypes, double> typeEffectiveness) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: typeEffectiveness.keys
-          .map(
-            (type) => PokemonType(
-              type,
-              large: true,
-              colored: true,
-              extra: 'x' + removeTrailingZero(typeEffectiveness[type] ?? 1),
-            ),
-          )
-          .toList(),
-    );
-  } */
 }
