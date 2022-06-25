@@ -77,18 +77,6 @@ class _PokemonAbout extends StatelessWidget {
           child: child,
         );
       },
-      child: Column(
-        children: <Widget>[
-          _buildDescription(pokemon.description),
-          SizedBox(height: 28),
-          _buildHeightWeight(pokemon.height, pokemon.weight),
-          SizedBox(height: 31),
-          SizedBox(height: 35),
-          _buildLocation(),
-          SizedBox(height: 26),
-          _buildTraining(pokemon.baseExp),
-        ],
-      ),
     );
   }
 

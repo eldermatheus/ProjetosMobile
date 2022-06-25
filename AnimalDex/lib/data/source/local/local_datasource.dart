@@ -2,20 +2,15 @@ import 'dart:math';
 
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:pokedex/data/source/local/models/pokemon.dart';
-import 'package:pokedex/data/source/local/models/pokemon_gender.dart';
-import 'package:pokedex/data/source/local/models/pokemon_stats.dart';
+import 'package:pokedex/data/source/local/models/pokemon.g.dart';
 
 class LocalDataSource {
   static Future<void> initialize() async {
     await Hive.initFlutter();
 
     Hive.registerAdapter<PokemonHiveModel>(PokemonHiveModelAdapter());
-    Hive.registerAdapter<PokemonGenderHiveModel>(PokemonGenderHiveModelAdapter());
-    Hive.registerAdapter<PokemonStatsHiveModel>(PokemonStatsHiveModelAdapter());
 
     await Hive.openBox<PokemonHiveModel>(PokemonHiveModel.boxKey);
-    await Hive.openBox<PokemonGenderHiveModel>(PokemonGenderHiveModel.boxKey);
-    await Hive.openBox<PokemonStatsHiveModel>(PokemonStatsHiveModel.boxKey);
   }
 
   Future<bool> hasData() async {
@@ -61,13 +56,5 @@ class LocalDataSource {
     final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
 
     return pokemonBox.get(number);
-  }
-
-  Future<List<PokemonHiveModel>> getEvolutions(PokemonHiveModel pokemon) async {
-    final pokemonFutures = pokemon.evolutions.map((pokemonNumber) => getPokemon(pokemonNumber));
-
-    final pokemons = await Future.wait(pokemonFutures);
-
-    return pokemons.whereType<PokemonHiveModel>().toList();
   }
 }

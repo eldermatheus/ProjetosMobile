@@ -62,10 +62,7 @@ class PokemonDefaultRepository extends PokemonRepository {
 
     if (pokemonModel == null) return null;
 
-    // get all evolutions
-    final evolutions = await localDataSource.getEvolutions(pokemonModel);
-
-    final pokemon = pokemonModel.toEntity(evolutions: evolutions);
+    final pokemon = pokemonModel.toEntity();
 
     return pokemon;
   }

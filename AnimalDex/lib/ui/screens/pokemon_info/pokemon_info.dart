@@ -23,7 +23,6 @@ part 'sections/pokemon_overall_info.dart';
 part 'sections/pokemon_info_card.dart';
 part 'sections/pokemon_info_card_about.dart';
 part 'sections/pokemon_info_card_basestats.dart';
-part 'sections/pokemon_info_card_evolutions.dart';
 
 class PokemonInfo extends StatefulWidget {
   @override

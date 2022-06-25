@@ -178,39 +178,6 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
     );
   }
 
-  Widget _buildPokemonTypes() {
-    return AnimatedFade(
-      animation: textFadeAnimation,
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 26),
-        child: CurrentPokemonSelector((pokemon) {
-          return Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Expanded(
-                child: Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  /* children:
-                      pokemon.types.take(3).map((type) => PokemonType(type, large: true)).toList(), */
-                ),
-              ),
-              AnimatedSlide(
-                animation: _horizontalSlideController,
-                child: Text(
-                  pokemon.genera,
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ],
-          );
-        }),
-      ),
-    );
-  }
-
   Widget _buildPokemonSlider() {
     final screenSize = MediaQuery.of(context).size;
     final sliderHeight = screenSize.height * 0.24;

@@ -39,7 +39,7 @@ class _PokemonInfoCardState extends State<_PokemonInfoCard> {
             ),
             MainTabData(
               label: 'Guia 3',
-              child: _PokemonEvolution(pokemon),
+              child: Text('Under development'),
             ),
             MainTabData(
               label: 'Guia 4',
