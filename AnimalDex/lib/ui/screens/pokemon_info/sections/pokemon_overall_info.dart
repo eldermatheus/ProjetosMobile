@@ -190,7 +190,8 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
         height: sliderHeight,
         child: Stack(
           children: <Widget>[
-            Align(
+            //Rotacao de poquebola
+            /*Align( 
               alignment: Alignment.bottomCenter,
               child: RotationTransition(
                 turns: rotateController,
@@ -199,7 +200,7 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
                   color: Colors.white12,
                 ),
               ),
-            ),
+            ),*/
             NumberOfPokemonsSelector((numberOfPokemons) {
               return PageView.builder(
                 allowImplicitScrolling: true,
@@ -215,7 +216,6 @@ class _PokemonOverallInfoState extends State<_PokemonOverallInfo> with TickerPro
                       padding: EdgeInsets.symmetric(
                         vertical: selected ? 0 : screenSize.height * 0.04,
                       ),
-                      tintColor: selected ? null : Colors.black26,
                       useHero: selected,
                     );
                   });

@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:pokedex/configs/images.dart';
 import 'package:pokedex/routes.dart';
-import 'package:loading_gifs/loading_gifs.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

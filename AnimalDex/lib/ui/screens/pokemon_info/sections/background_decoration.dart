@@ -19,8 +19,8 @@ class _BoxDecoration extends StatelessWidget {
             begin: Alignment(-0.2, -0.2),
             end: Alignment(1.5, -0.3),
             colors: [
-              Colors.white.withOpacity(0.3),
-              Colors.white.withOpacity(0),
+              Color.fromARGB(255, 221, 7, 7).withOpacity(0.3),
+              Color.fromARGB(255, 241, 6, 6).withOpacity(0),
             ],
           ),
         ),

@@ -129,23 +129,6 @@ class _PokemonAbout extends StatelessWidget {
     );
   }
 
-  Widget _buildLocation() {
-    return _ContentSection(
-      label: 'Location',
-      children: [
-        AspectRatio(
-          aspectRatio: 2.2,
-          child: Container(
-            decoration: BoxDecoration(
-              color: AppColors.teal,
-              borderRadius: BorderRadius.circular(12),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-
   Widget _buildTraining(double baseExp) {
     return _ContentSection(
       label: 'Training',

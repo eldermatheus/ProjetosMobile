@@ -42,7 +42,7 @@ class PokemonCard extends StatelessWidget {
                 child: Stack(
                   children: [
                     _buildPokemon(height: itemHeight), // Foto do animal
-                    _buildPokemonNumber(),
+                    _buildPokemonNumber(), // Numero do animal
                     _CardContent(pokemon), // Nome do animal
                   ],
                 ),
