@@ -20,7 +20,7 @@ class PokemonImage extends StatelessWidget {
     required this.size,
     this.padding = EdgeInsets.zero,
     this.useHero = true,
-    this.placeholder = AppImages.bulbasaur,
+    this.placeholder = AppImages.load,
     this.tintColor,
   }) : super(key: key);
 

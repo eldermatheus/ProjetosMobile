@@ -127,7 +127,7 @@ class _PokemonGridState extends State<_PokemonGrid> {
             return Container(
               padding: EdgeInsets.only(bottom: 28),
               alignment: Alignment.center,
-              child: Image(image: AppImages.load),
+              child: Image(image: AppImages.dotted),
             );
           }),
         ),
