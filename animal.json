@@ -15,7 +15,7 @@
             "genus":"Caracara",            
             "imageURL":"https://inaturalist-open-data.s3.amazonaws.com/photos/10213/medium.jpg",
             "dataLink":"https://www.inaturalist.org/photos/10213",
-            "imageAuthor":"Jamie Drake",            
+            "imageAuthor":"Jamie Drake"
       },
       {
             "id":"236711",      
@@ -33,7 +33,7 @@
             "genus":"Dasypus",
             "imageURL":"https://static.inaturalist.org/photos/5859039/small.jpg",
             "dataLink":"https://www.inaturalist.org/photos/5859039?size=small",
-            "imageAuthor":"fm5050",
+            "imageAuthor":"fm5050"
       },
       {
             "id":"164468",      
@@ -52,7 +52,7 @@
             "genus":"Apis",
             "imageURL":"http://static.inaturalist.org/photos/2369526/small.jpg",
             "dataLink":"https://www.inaturalist.org/photos/2369526",
-            "imageAuthor":"Georges-Alexandre Cotnoir",
+            "imageAuthor":"Georges-Alexandre Cotnoir"
       },      
       {
             "id":"212307",                  
@@ -70,7 +70,7 @@
             "genus":"Athene",
             "imageURL":"https://static.inaturalist.org/photos/57747291/small.jpg",
             "dataLink":"https://www.inaturalist.org/photos/57747291",
-            "imageAuthor":"Jason Penney",
+            "imageAuthor":"Jason Penney"
       },
       {
             "id":"225234",
@@ -88,7 +88,7 @@
             "genus":"Tapirus",
             "imageURL":"https://static.inaturalist.org/photos/22314597/small.jpg",
             "dataLink":"https://www.inaturalist.org/photos/22314597",
-            "imageAuthor":"jtak",
+            "imageAuthor":"jtak"
       },
       {
             "id":"119714",
@@ -106,6 +106,6 @@
             "genus":"Brycon", 
             "imageURL":"https://inaturalist-open-data.s3.amazonaws.com/photos/74588476/small.jpg",
             "dataLink":"https://www.inaturalist.org/photos/74588476",
-            "imageAuthor":"Amaro Alves",
+            "imageAuthor":"Amaro Alves"
       }
 ]
