@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/configs/colors.dart';
+import 'package:animaldex/configs/colors.dart';
 
 class ProgressBar extends StatelessWidget {
   const ProgressBar({

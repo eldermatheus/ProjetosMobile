@@ -1,11 +1,12 @@
+import 'package:animaldex/domain/entities/animal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pokedex/app.dart';
-import 'package:pokedex/core/network.dart';
-import 'package:pokedex/data/repositories/pokemon_repository.dart';
-import 'package:pokedex/data/source/github/github_datasource.dart';
-import 'package:pokedex/data/source/local/local_datasource.dart';
-import 'package:pokedex/states/pokemon/pokemon_bloc.dart';
+import 'package:animaldex/app.dart';
+import 'package:animaldex/core/network.dart';
+import 'package:animaldex/data/repositories/animal_repository.dart';
+import 'package:animaldex/data/source/github/github_datasource.dart';
+import 'package:animaldex/data/source/local/local_datasource.dart';
+import 'package:animaldex/states/animal/animal_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,8 +36,8 @@ void main() async {
         ///
         /// Repositories
         ///
-        RepositoryProvider<PokemonRepository>(
-          create: (context) => PokemonDefaultRepository(
+        RepositoryProvider<AnimalRepository>(
+          create: (context) => AnimalDefaultRepository(
             localDataSource: context.read<LocalDataSource>(),
             githubDataSource: context.read<GithubDataSource>(),
           ),
@@ -47,11 +48,11 @@ void main() async {
           ///
           /// BLoCs
           ///
-          BlocProvider<PokemonBloc>(
-            create: (context) => PokemonBloc(context.read<PokemonRepository>()),
+          BlocProvider<AnimalBloc>(
+            create: (context) => AnimalBloc(context.read<AnimalRepository>()),
           ),
         ],
-        child: PokedexApp(),
+        child: AnimalDexApp(),
       ),
     ),
   );

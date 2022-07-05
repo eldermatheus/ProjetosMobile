@@ -1,60 +1,60 @@
 import 'dart:math';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:pokedex/data/source/local/models/pokemon.dart';
-import 'package:pokedex/data/source/local/models/pokemon.g.dart';
+import 'package:animaldex/data/source/local/models/animal.dart';
+import 'package:animaldex/data/source/local/models/animal.g.dart';
 
 class LocalDataSource {
   static Future<void> initialize() async {
     await Hive.initFlutter();
 
-    Hive.registerAdapter<PokemonHiveModel>(PokemonHiveModelAdapter());
+    Hive.registerAdapter<AnimalHiveModel>(AnimalHiveModelAdapter());
 
-    await Hive.openBox<PokemonHiveModel>(PokemonHiveModel.boxKey);
+    await Hive.openBox<AnimalHiveModel>(AnimalHiveModel.boxKey);
   }
 
   Future<bool> hasData() async {
-    final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
+    final animalBox = Hive.box<AnimalHiveModel>(AnimalHiveModel.boxKey);
 
-    return pokemonBox.length > 0;
+    return animalBox.length > 0;
   }
 
-  Future<void> savePokemons(Iterable<PokemonHiveModel> pokemons) async {
-    final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
+  Future<void> saveAnimals(Iterable<AnimalHiveModel> animals) async {
+    final animalBox = Hive.box<AnimalHiveModel>(AnimalHiveModel.boxKey);
 
-    final pokemonsMap = {for (var e in pokemons) e.number: e};
+    final animalsMap = {for (var e in animals) e.id: e};
 
-    await pokemonBox.clear();
-    await pokemonBox.putAll(pokemonsMap);
+    await animalBox.clear();
+    await animalBox.putAll(animalsMap);
   }
 
-  Future<List<PokemonHiveModel>> getAllPokemons() async {
-    final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
+  Future<List<AnimalHiveModel>> getAllAnimals() async {
+    final animalBox = Hive.box<AnimalHiveModel>(AnimalHiveModel.boxKey);
 
-    final pokemons = List.generate(pokemonBox.length, (index) => pokemonBox.getAt(index))
-        .whereType<PokemonHiveModel>()
+    final animals = List.generate(animalBox.length, (index) => animalBox.getAt(index))
+        .whereType<AnimalHiveModel>()
         .toList();
 
-    return pokemons;
+    return animals;
   }
 
-  Future<List<PokemonHiveModel>> getPokemons({required int page, required int limit}) async {
-    final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
-    final totalPokemons = pokemonBox.length;
+  Future<List<AnimalHiveModel>> getAnimals({required int page, required int limit}) async {
+    final animalBox = Hive.box<AnimalHiveModel>(AnimalHiveModel.boxKey);
+    final totalAnimals = animalBox.length;
 
     final start = (page - 1) * limit;
-    final newPokemonCount = min(totalPokemons - start, limit);
+    final newAnimalCount = min(totalAnimals - start, limit);
 
-    final pokemons = List.generate(newPokemonCount, (index) => pokemonBox.getAt(start + index))
-        .whereType<PokemonHiveModel>()
+    final animals = List.generate(newAnimalCount, (index) => animalBox.getAt(start + index))
+        .whereType<AnimalHiveModel>()
         .toList();
 
-    return pokemons;
+    return animals;
   }
 
-  Future<PokemonHiveModel?> getPokemon(String number) async {
-    final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
+  Future<AnimalHiveModel?> getAnimal(String number) async {
+    final animalBox = Hive.box<AnimalHiveModel>(AnimalHiveModel.boxKey);
 
-    return pokemonBox.get(number);
+    return animalBox.get(number);
   }
 }

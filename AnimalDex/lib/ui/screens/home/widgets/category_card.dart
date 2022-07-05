@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/configs/images.dart';
-import 'package:pokedex/domain/entities/category.dart';
+import 'package:animaldex/configs/images.dart';
+import 'package:animaldex/domain/entities/category.dart';
 
 class CategoryCard extends StatelessWidget {
   final Category category;

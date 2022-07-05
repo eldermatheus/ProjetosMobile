@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'package:pokedex/data/categories.dart';
-import 'package:pokedex/domain/entities/category.dart';
-import 'package:pokedex/ui/widgets/search_bar.dart';
-import 'package:pokedex/routes.dart';
+import 'package:animaldex/data/categories.dart';
+import 'package:animaldex/domain/entities/category.dart';
+import 'package:animaldex/ui/widgets/search_bar.dart';
+import 'package:animaldex/routes.dart';
 
 import 'widgets/category_card.dart';
 

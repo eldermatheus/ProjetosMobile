@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/configs/colors.dart';
-import 'package:pokedex/ui/widgets/spacer.dart';
+import 'package:animaldex/configs/colors.dart';
+import 'package:animaldex/ui/widgets/spacer.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({

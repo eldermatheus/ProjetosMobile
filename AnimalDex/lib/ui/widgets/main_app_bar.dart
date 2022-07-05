@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/routes.dart';
-import 'package:pokedex/utils/size.dart';
+import 'package:animaldex/routes.dart';
+import 'package:animaldex/utils/size.dart';
 
 const double mainAppbarPadding = 28;
 

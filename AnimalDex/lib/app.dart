@@ -1,20 +1,21 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:pokedex/configs/colors.dart';
-import 'package:pokedex/configs/constants.dart';
-import 'package:pokedex/configs/fonts.dart';
-import 'package:pokedex/routes.dart';
+import 'package:animaldex/configs/colors.dart';
+import 'package:animaldex/configs/constants.dart';
+import 'package:animaldex/configs/fonts.dart';
+import 'package:animaldex/routes.dart';
 
-class PokedexApp extends StatelessWidget {
+class AnimalDexApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
     return MaterialApp(
       color: Colors.white,
-      title: 'Flutter Pokedex',
+      title: 'Flutter Animaldex',
       theme: ThemeData(
+        visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: AppFonts.circularStd,
         textTheme: theme.textTheme.apply(
           fontFamily: AppFonts.circularStd,

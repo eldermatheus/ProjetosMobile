@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/core/fade_page_route.dart';
-import 'package:pokedex/ui/screens/home/home.dart';
-import 'package:pokedex/ui/screens/pokedex/pokedex.dart';
-import 'package:pokedex/ui/screens/pokemon_info/pokemon_info.dart';
-import 'package:pokedex/ui/screens/splash/splash.dart';
+import 'package:animaldex/core/fade_page_route.dart';
+import 'package:animaldex/ui/screens/home/home.dart';
+import 'package:animaldex/ui/screens/animaldex/animaldex.dart';
+import 'package:animaldex/ui/screens/animal_info/animal_info.dart';
+import 'package:animaldex/ui/screens/splash/splash.dart';
 
-enum Routes { splash, home, pokedex, pokemonInfo, typeEffects, items }
+enum Routes { splash, home, animaldex, animalInfo, typeEffects, items }
 
 class _Paths {
   static const String splash = '/';
   static const String home = '/home';
-  static const String pokedex = '/home/pokedex';
-  static const String pokemonInfo = '/home/pokemon';
+  static const String animaldex = '/home/animaldex';
+  static const String animalInfo = '/home/animal';
   static const String typeEffectsScreen = '/home/type';
   static const String itemsList = '/home/items';
 
   static const Map<Routes, String> _pathMap = {
     Routes.splash: _Paths.splash,
     Routes.home: _Paths.home,
-    Routes.pokedex: _Paths.pokedex,
-    Routes.pokemonInfo: _Paths.pokemonInfo,
+    Routes.animaldex: _Paths.animaldex,
+    Routes.animalInfo: _Paths.animalInfo,
     Routes.typeEffects: _Paths.typeEffectsScreen,
     Routes.items: _Paths.itemsList
   };
@@ -35,11 +35,11 @@ class AppNavigator {
       case _Paths.splash:
         return FadeRoute(page: SplashScreen());
 
-      case _Paths.pokedex:
-        return FadeRoute(page: PokedexScreen());
+      case _Paths.animaldex:
+        return FadeRoute(page: AnimaldexScreen());
 
-      case _Paths.pokemonInfo:
-        return FadeRoute(page: PokemonInfo());
+      case _Paths.animalInfo:
+        return FadeRoute(page: AnimalInfo());
 
       case _Paths.home:
       default:

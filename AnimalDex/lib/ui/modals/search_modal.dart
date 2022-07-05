@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pokedex/ui/widgets/modal.dart';
-import 'package:pokedex/ui/widgets/search_bar.dart';
+import 'package:animaldex/ui/widgets/modal.dart';
+import 'package:animaldex/ui/widgets/search_bar.dart';
 
 class SearchBottomModal extends StatelessWidget {
   @override
