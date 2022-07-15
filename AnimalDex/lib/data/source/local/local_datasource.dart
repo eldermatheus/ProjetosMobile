@@ -52,9 +52,9 @@ class LocalDataSource {
     return animals;
   }
 
-  Future<AnimalHiveModel?> getAnimal(String number) async {
+  Future<AnimalHiveModel?> getAnimal(String id) async {
     final animalBox = Hive.box<AnimalHiveModel>(AnimalHiveModel.boxKey);
 
-    return animalBox.get(number);
+    return animalBox.get(id);
   }
 }

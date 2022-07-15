@@ -5,7 +5,7 @@ import 'package:pokedex/states/pokemon/pokemon_event.dart';
 import 'package:pokedex/states/pokemon/pokemon_state.dart';
 
 class PokemonBloc extends Bloc<PokemonEvent, PokemonState> {
-  static const int pokemonsPerPage = 20;
+  static const int pokemonsPerPage = 5;
 
   final PokemonRepository _pokemonRepository;
 

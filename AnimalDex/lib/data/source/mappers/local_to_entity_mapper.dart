@@ -1,7 +1,7 @@
 import 'package:animaldex/data/source/local/models/animal.dart';
 import 'package:animaldex/domain/entities/animal.dart';
 
-extension PokemonHiveModelX on AnimalHiveModel {
+extension AnimalHiveModelX on AnimalHiveModel {
   Animal toEntity({List<AnimalHiveModel> evolutions = const []}) => Animal(
         id: id.trim(),
         scientificName: scientificName.trim(),

@@ -5,7 +5,7 @@ import 'package:animaldex/states/animal/animal_event.dart';
 import 'package:animaldex/states/animal/animal_state.dart';
 
 class AnimalBloc extends Bloc<AnimalEvent, AnimalState> {
-  static const int animalsPerPage = 10;
+  static const int animalsPerPage = 20;
 
   final AnimalRepository _animalRepository;
 

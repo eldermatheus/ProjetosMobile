@@ -35,9 +35,9 @@ class GetAnimalsUseCase extends UseCase<List<Animal>, GetAnimalsParams> {
 }
 
 class GetAnimalParam {
-  final String number;
+  final String id;
 
-  const GetAnimalParam(this.number);
+  const GetAnimalParam(this.id);
 }
 
 class GetAnimalUseCase extends UseCase<Animal?, GetAnimalParam> {
@@ -47,6 +47,6 @@ class GetAnimalUseCase extends UseCase<Animal?, GetAnimalParam> {
 
   @override
   Future<Animal?> call(GetAnimalParam params) {
-    return repository.getAnimal(params.number);
+    return repository.getAnimal(params.id);
   }
 }

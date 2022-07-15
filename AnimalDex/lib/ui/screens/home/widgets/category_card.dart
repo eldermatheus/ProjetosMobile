@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:animaldex/configs/images.dart';
 import 'package:animaldex/domain/entities/category.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -15,7 +14,6 @@ class CategoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constrains) {
-        final itemHeight = constrains.maxHeight;
         final itemWidth = constrains.maxWidth;
 
         return Stack(

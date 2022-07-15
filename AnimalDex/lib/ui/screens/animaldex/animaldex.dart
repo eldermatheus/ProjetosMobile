@@ -1,10 +1,9 @@
 import 'dart:async';
 
-import 'package:animaldex/ui/screens/animal_info/animal_info.dart';
+import 'package:animaldex/configs/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:animaldex/configs/durations.dart';
-import 'package:animaldex/configs/images.dart';
 import 'package:animaldex/core/extensions/animation.dart';
 import 'package:animaldex/domain/entities/animal.dart';
 import 'package:animaldex/routes.dart';

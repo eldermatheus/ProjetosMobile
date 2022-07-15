@@ -41,7 +41,7 @@ class AnimalCard extends StatelessWidget {
                 highlightColor: Colors.white10,
                 child: Stack(
                   children: [
-                    _buildAnimal(height: itemHeight), // Foto do animal
+                    //_buildAnimal(height: itemHeight), // Foto do animal
                     _buildAnimalNumber(), // Numero do animal
                     _CardContent(animal), // Nome do animal
                   ],
@@ -101,7 +101,7 @@ class _CardContent extends StatelessWidget {
             Hero(
               tag: animal.id + animal.name,
               child: Text(
-                animal.name,
+                animal.commonName,
                 style: TextStyle(
                   fontSize: 14,
                   height: 0.1,

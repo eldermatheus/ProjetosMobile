@@ -109,20 +109,7 @@ class _AnimalBaseStatsState extends State<_AnimalBaseStats> with SingleTickerPro
         children: <Widget>[
           //buildStats(contruir.stats),
           SizedBox(height: 27),
-          Text(
-            'Type defenses',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.bold,
-              height: 0.8,
-            ),
-          ),
-          SizedBox(height: 15),
-          Text(
-            'The effectiveness of each type on ${animal.name}.',
-            style: TextStyle(color: AppColors.black.withOpacity(0.6)),
-          ),
-          SizedBox(height: 15),
+          Text('Under development')
         ],
       ),
     );

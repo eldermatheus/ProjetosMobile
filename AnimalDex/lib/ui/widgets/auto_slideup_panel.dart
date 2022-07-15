@@ -16,10 +16,10 @@ class AutoSlideUpPanel extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<AutoSlideUpPanel> createState() => _PokemonInfoCardState();
+  State<AutoSlideUpPanel> createState() => _AnimalInfoCardState();
 }
 
-class _PokemonInfoCardState extends State<AutoSlideUpPanel> with SingleTickerProviderStateMixin {
+class _AnimalInfoCardState extends State<AutoSlideUpPanel> with SingleTickerProviderStateMixin {
   late AnimationController _autoSlideUpController;
 
   @override

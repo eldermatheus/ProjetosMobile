@@ -120,7 +120,7 @@ class _AnimalOverallInfoState extends State<_AnimalOverallInfo> with TickerProvi
           style: TextStyle(
             color: Colors.transparent,
             fontWeight: FontWeight.w900,
-            fontSize: 22,
+            fontSize: 20,
           ),
         );
       }),
@@ -145,12 +145,13 @@ class _AnimalOverallInfoState extends State<_AnimalOverallInfo> with TickerProvi
                 offset: Offset(textDiffLeft * value, textDiffTop * value),
                 child: CurrentAnimalSelector((animal) {
                   return HeroText(
-                    animal.name,
+                    animal.commonName,
                     textKey: _currentTextKey,
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
-                      fontSize: 36 - (36 - 22) * value,
+                      fontSize: 28,
+                      //fontSize: 36 - (36 - 28) * value,
                     ),
                   );
                 }),
@@ -199,14 +200,15 @@ class _AnimalOverallInfoState extends State<_AnimalOverallInfo> with TickerProvi
                 onPageChanged: _onSelectedAnimalChanged,
                 itemBuilder: (_, index) {
                   return AnimalSelector(index, (animal, selected) {
-                    return AnimalImage(
+                    return Container();
+                    /*return AnimalImage(
                       animal: animal,
                       size: Size.square(animalSize),
                       padding: EdgeInsets.symmetric(
                         vertical: selected ? 0 : screenSize.height * 0.04,
                       ),
                       useHero: selected,
-                    );
+                    );*/
                   });
                 },
               );

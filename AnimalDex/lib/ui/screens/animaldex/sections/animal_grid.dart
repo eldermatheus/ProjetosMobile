@@ -68,64 +68,15 @@ class _AnimalGridState extends State<_AnimalGrid> {
         switch (status) {
           case AnimalStateStatus.loading:
             return _buildLoading();
+
           case AnimalStateStatus.loadSuccess:
           case AnimalStateStatus.loadMoreSuccess:
           case AnimalStateStatus.loadingMore:
             return _buildGrid();
+
           case AnimalStateStatus.loadFailure:
           case AnimalStateStatus.loadMoreFailure:
             return _buildError();
-
-          /*case AnimalStateStatus.loading:
-            //return _buildLoading();
-            return Container(
-              constraints: BoxConstraints.expand(),
-              padding: EdgeInsets.all(28),
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                'Container carrengando',
-                style: TextStyle(
-                  fontSize: 30,
-                  height: 1.6,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-            );
-
-          case AnimalStateStatus.loadSuccess:
-          case AnimalStateStatus.loadMoreSuccess:
-          case AnimalStateStatus.loadingMore:
-            //return _buildGrid();
-            return Container(
-              constraints: BoxConstraints.expand(),
-              padding: EdgeInsets.all(28),
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                'Container abriu',
-                style: TextStyle(
-                  fontSize: 30,
-                  height: 1.6,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-            );
-
-          case AnimalStateStatus.loadFailure:
-          case AnimalStateStatus.loadMoreFailure:
-            return Container(
-              constraints: BoxConstraints.expand(),
-              padding: EdgeInsets.all(28),
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                'Container Falhou',
-                style: TextStyle(
-                  fontSize: 30,
-                  height: 1.6,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-            );
-          //return _buildError();*/
 
           default:
             return Container(
@@ -146,7 +97,7 @@ class _AnimalGridState extends State<_AnimalGrid> {
     );
   }
 
-  Widget _buildLoading() {
+  /*Widget _buildLoading() {
     return Center(
       child: Container(
         constraints: BoxConstraints.expand(),
@@ -161,6 +112,12 @@ class _AnimalGridState extends State<_AnimalGrid> {
           ),
         ),
       ), //child: Image(image: AppImages.load),
+    );
+  }*/
+
+  Widget _buildLoading() {
+    return Center(
+      child: Image(image: AppImages.load),
     );
   }
 

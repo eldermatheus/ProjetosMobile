@@ -15,7 +15,6 @@ class AnimalDexApp extends StatelessWidget {
       color: Colors.white,
       title: 'Flutter Animaldex',
       theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: AppFonts.circularStd,
         textTheme: theme.textTheme.apply(
           fontFamily: AppFonts.circularStd,
