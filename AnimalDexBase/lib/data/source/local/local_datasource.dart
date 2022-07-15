@@ -22,7 +22,7 @@ class LocalDataSource {
   Future<void> savePokemons(Iterable<PokemonHiveModel> pokemons) async {
     final pokemonBox = Hive.box<PokemonHiveModel>(PokemonHiveModel.boxKey);
 
-    final pokemonsMap = {for (var e in pokemons) e.number: e};
+    final pokemonsMap = {for (var e in pokemons) e.id: e};
 
     await pokemonBox.clear();
     await pokemonBox.putAll(pokemonsMap);

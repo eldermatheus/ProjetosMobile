@@ -19,7 +19,7 @@ class PokemonHiveModelAdapter extends TypeAdapter<PokemonHiveModel> {
     };
     return PokemonHiveModel()
       ..name = fields[0] as String
-      ..number = fields[1] as String
+      ..id = fields[1] as String
       ..imageUrl = fields[2] as String
       ..xDescription = fields[3] as String;
   }
@@ -31,7 +31,7 @@ class PokemonHiveModelAdapter extends TypeAdapter<PokemonHiveModel> {
       ..writeByte(0)
       ..write(obj.name)
       ..writeByte(1)
-      ..write(obj.number)
+      ..write(obj.id)
       ..writeByte(2)
       ..write(obj.imageUrl)
       ..writeByte(3)

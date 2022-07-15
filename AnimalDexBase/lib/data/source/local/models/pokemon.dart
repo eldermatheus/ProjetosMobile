@@ -8,7 +8,7 @@ class PokemonHiveModel extends HiveObject {
   late String name;
 
   @HiveField(1)
-  late String number;
+  late String id;
 
   @HiveField(2)
   late String imageUrl;

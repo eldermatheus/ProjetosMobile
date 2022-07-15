@@ -13,12 +13,12 @@
         "order": "Falconiformes",
         "family": "Falconidae",
         "genus": "Caracara",
-        "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/10213/small.jpg",
+        "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/10213/medium.jpg",
         "dataLink": "https://www.inaturalist.org/photos/10213",
         "imageAuthor": "Jamie Drake",
         "name": "Bulbasaur",
         "id2": "#001",
-        "imageUrl2": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "imageUrl2": "https://inaturalist-open-data.s3.amazonaws.com/photos/10213/medium.jpg",
         "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
     },
     {
@@ -40,7 +40,7 @@
         "imageAuthor": "fm5050",
         "name": "Bulbasaur",
         "id2": "#002",
-        "imageUrl2": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "imageUrl2": "https://static.inaturalist.org/photos/5859039/small.jpg",
         "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
     },
     {
@@ -62,7 +62,7 @@
         "imageAuthor": "Georges-Alexandre Cotnoir",
         "name": "Bulbasaur",
         "id2": "#003",
-        "imageUrl2": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "imageUrl2": "http://static.inaturalist.org/photos/2369526/small.jpg",
         "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
     },
     {
@@ -84,7 +84,7 @@
         "imageAuthor": "Jason Penney",
         "name": "Bulbasaur",
         "id2": "#004",
-        "imageUrl2": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "imageUrl2": "https://static.inaturalist.org/photos/57747291/small.jpg",
         "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
     },
     {
@@ -106,7 +106,7 @@
         "imageAuthor": "jtak",
         "name": "Bulbasaur",
         "id2": "#005",
-        "imageUrl2": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "imageUrl2": "https://static.inaturalist.org/photos/22314597/small.jpg",
         "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
     },
     {
@@ -128,7 +128,7 @@
         "imageAuthor": "Amaro Alves",
         "name": "Bulbasaur",
         "id2": "#006",
-        "imageUrl2": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+        "imageUrl2": "https://inaturalist-open-data.s3.amazonaws.com/photos/74588476/small.jpg",
         "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
     }
 ]

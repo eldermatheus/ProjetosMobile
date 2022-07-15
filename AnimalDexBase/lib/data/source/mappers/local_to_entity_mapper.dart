@@ -4,7 +4,7 @@ import 'package:pokedex/domain/entities/pokemon.dart';
 extension PokemonHiveModelX on PokemonHiveModel {
   Pokemon toEntity({List<PokemonHiveModel> evolutions = const []}) => Pokemon(
         name: name.trim(),
-        number: number.trim(),
+        number: id.trim(),
         image: imageUrl.trim(),
         xDescription: xDescription.trim(),
       );

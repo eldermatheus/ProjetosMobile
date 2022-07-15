@@ -200,15 +200,14 @@ class _AnimalOverallInfoState extends State<_AnimalOverallInfo> with TickerProvi
                 onPageChanged: _onSelectedAnimalChanged,
                 itemBuilder: (_, index) {
                   return AnimalSelector(index, (animal, selected) {
-                    return Container();
-                    /*return AnimalImage(
+                    return AnimalImage(
                       animal: animal,
                       size: Size.square(animalSize),
                       padding: EdgeInsets.symmetric(
                         vertical: selected ? 0 : screenSize.height * 0.04,
                       ),
                       useHero: selected,
-                    );*/
+                    );
                   });
                 },
               );

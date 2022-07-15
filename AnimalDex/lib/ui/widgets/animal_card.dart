@@ -41,7 +41,7 @@ class AnimalCard extends StatelessWidget {
                 highlightColor: Colors.white10,
                 child: Stack(
                   children: [
-                    //_buildAnimal(height: itemHeight), // Foto do animal
+                    _buildAnimal(height: itemHeight), // Foto do animal
                     _buildAnimalNumber(), // Numero do animal
                     _CardContent(animal), // Nome do animal
                   ],
