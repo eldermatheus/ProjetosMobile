@@ -16,15 +16,14 @@ class GithubAnimalModel {
     this.phylum,
     this.classe,
     this.order,
+    this.suborder,
     this.family,
     this.genus,
-    /*this.imageUrl,
-    this.dataLink,*/
+    this.imageUrl,
+    this.dataLink,
     this.imageAuthor,
-    this.name,
-    this.id2,
-    this.imageUrl2,
-    this.xdescription,
+    this.conservationState,
+    this.geographicDistribution,
   );
 
   factory GithubAnimalModel.fromJson(Map<String, dynamic> json) =>
@@ -66,23 +65,26 @@ class GithubAnimalModel {
   final String order;
 
   @JsonKey(required: true, disallowNullValue: true)
+  final String suborder;
+
+  @JsonKey(required: true, disallowNullValue: true)
   final String family;
 
   @JsonKey(required: true, disallowNullValue: true)
   final String genus;
 
   @JsonKey(required: true, disallowNullValue: true)
+  final String imageUrl;
+
+  @JsonKey(required: true, disallowNullValue: true)
+  final String dataLink;
+
+  @JsonKey(required: true, disallowNullValue: true)
   final String imageAuthor;
 
   @JsonKey(required: true, disallowNullValue: true)
-  final String name;
+  final String conservationState;
 
   @JsonKey(required: true, disallowNullValue: true)
-  final String id2;
-
-  @JsonKey(required: true, disallowNullValue: true)
-  final String imageUrl2;
-
-  @JsonKey(required: true, disallowNullValue: true)
-  final String xdescription;
+  final String geographicDistribution;
 }

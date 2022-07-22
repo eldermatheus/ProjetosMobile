@@ -20,8 +20,9 @@ import 'package:animaldex/ui/widgets/progress.dart';
 part 'sections/background_decoration.dart';
 part 'sections/animal_overall_info.dart';
 part 'sections/animal_info_card.dart';
-part 'sections/animal_info_card_about.dart';
-part 'sections/animal_info_card_basestats.dart';
+part 'sections/animal_info_card_taxon.dart';
+part 'sections/animal_info_card_distri.dart';
+part 'sections/animal_info_card_copyright.dart';
 
 class AnimalInfo extends StatefulWidget {
   @override

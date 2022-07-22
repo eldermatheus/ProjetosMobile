@@ -97,24 +97,6 @@ class _AnimalGridState extends State<_AnimalGrid> {
     );
   }
 
-  /*Widget _buildLoading() {
-    return Center(
-      child: Container(
-        constraints: BoxConstraints.expand(),
-        padding: EdgeInsets.all(28),
-        alignment: Alignment.bottomLeft,
-        child: Text(
-          'Bem vindo ao \nAnimalDex',
-          style: TextStyle(
-            fontSize: 30,
-            height: 1.6,
-            fontWeight: FontWeight.w900,
-          ),
-        ),
-      ), //child: Image(image: AppImages.load),
-    );
-  }*/
-
   Widget _buildLoading() {
     return Center(
       child: Image(image: AppImages.load),

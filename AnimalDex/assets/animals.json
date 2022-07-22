@@ -11,15 +11,14 @@
         "phylum": "Chordata",
         "classe": "Aves",
         "order": "Falconiformes",
+        "suborder": "null",
         "family": "Falconidae",
         "genus": "Caracara",
         "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/10213/medium.jpg",
         "dataLink": "https://www.inaturalist.org/photos/10213",
         "imageAuthor": "Jamie Drake",
-        "name": "Bulbasaur",
-        "id2": "#001",
-        "imageUrl2": "https://inaturalist-open-data.s3.amazonaws.com/photos/10213/medium.jpg",
-        "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+        "conservationState": "Pouco preocupante",
+        "geographicDistribution": "Centro e o sul da América do Sul."
     },
     {
         "id": "#236711",
@@ -33,21 +32,20 @@
         "phylum": "Chordata",
         "classe": "Mammalia",
         "order": "Cingulata",
+        "suborder": "null",
         "family": "Dasypodidae",
         "genus": "Dasypus",
         "imageUrl": "https://static.inaturalist.org/photos/5859039/small.jpg",
         "dataLink": "https://www.inaturalist.org/photos/5859039?size=small",
         "imageAuthor": "fm5050",
-        "name": "Bulbasaur",
-        "id2": "#002",
-        "imageUrl2": "https://static.inaturalist.org/photos/5859039/small.jpg",
-        "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+        "conservationState": "Pouco preocupante",
+        "geographicDistribution": "Ocorre nas Américas do Norte, Central e do Sul."
     },
     {
         "id": "#164468",
-        "scientificName": "Apis Linnaeus",
+        "scientificName": "Apis mellifera",
         "commonName": "Abelha-Do-Mel",
-        "completeName": "Apis Linnaeus, 1758",
+        "completeName": "Apis mellifera (Linnaeus 1758)",
         "author": "Linnaeus, 1758",
         "rankString": "species",
         "nameAuthority": "Catálogo Taxonômico da Fauna do Brasil e Lista da Flora do Brasil 2020",
@@ -55,15 +53,14 @@
         "phylum": "Arthropoda",
         "classe": "Insecta",
         "order": "Hymenoptera",
+        "suborder": "Apocrita",
         "family": "Apidae",
         "genus": "Apis",
         "imageUrl": "http://static.inaturalist.org/photos/2369526/small.jpg",
         "dataLink": "https://www.inaturalist.org/photos/2369526",
         "imageAuthor": "Georges-Alexandre Cotnoir",
-        "name": "Bulbasaur",
-        "id2": "#003",
-        "imageUrl2": "http://static.inaturalist.org/photos/2369526/small.jpg",
-        "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+        "conservationState": "Pouco preocupante",
+        "geographicDistribution": "Ocorre na Ásia e Europa e foi introduzida nas Américas por ingleses e espanhóis."
     },
     {
         "id": "#212307",
@@ -77,15 +74,14 @@
         "phylum": "Chordata",
         "classe": "Mammalia",
         "order": "Strigiformes",
+        "suborder": "null",
         "family": "Strigidae",
         "genus": "Athene",
         "imageUrl": "https://static.inaturalist.org/photos/57747291/small.jpg",
         "dataLink": "https://www.inaturalist.org/photos/57747291",
         "imageAuthor": "Jason Penney",
-        "name": "Bulbasaur",
-        "id2": "#004",
-        "imageUrl2": "https://static.inaturalist.org/photos/57747291/small.jpg",
-        "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+        "conservationState": "Pouco preocupante",
+        "geographicDistribution": "Ocorre do Canadá ao extremo sul da América do Sul, com exceção da Amazônia."
     },
     {
         "id": "#225234",
@@ -99,20 +95,19 @@
         "phylum": "Chordata",
         "classe": "Mammalia",
         "order": "Perissodactyla",
+        "suborder": "null",
         "family": "Tapiriidae",
         "genus": "Tapirus",
         "imageUrl": "https://static.inaturalist.org/photos/22314597/small.jpg",
         "dataLink": "https://www.inaturalist.org/photos/22314597",
         "imageAuthor": "jtak",
-        "name": "Bulbasaur",
-        "id2": "#005",
-        "imageUrl2": "https://static.inaturalist.org/photos/22314597/small.jpg",
-        "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+        "conservationState": "Vulnerável",
+        "geographicDistribution": "Ocorre desde o sul da Venezuela até o norte da Argentina."
     },
     {
-        "id": "#1234",
+        "id": "#119714",
         "scientificName": "Brycon Nattereri",
-        "commonName": "Piracanjuvira",
+        "commonName": "Piracanjuva",
         "completeName": "Brycon nattereri Günther, 1864",
         "author": "Günther, 1864",
         "rankString": "species",
@@ -121,14 +116,13 @@
         "phylum": "Chordata",
         "classe": "Actinopteri",
         "order": "Characiformes",
+        "suborder": "null",
         "family": "Bryconidae",
         "genus": "Brycon",
         "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/74588476/small.jpg",
         "dataLink": "https://www.inaturalist.org/photos/74588476",
         "imageAuthor": "Amaro Alves",
-        "name": "Bulbasaur",
-        "id2": "#006",
-        "imageUrl2": "https://inaturalist-open-data.s3.amazonaws.com/photos/74588476/small.jpg",
-        "xdescription": "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger."
+        "conservationState": "Vulnerável",
+        "geographicDistribution": "Ocorre no rio Paraná, na América do Sul."
     }
 ]

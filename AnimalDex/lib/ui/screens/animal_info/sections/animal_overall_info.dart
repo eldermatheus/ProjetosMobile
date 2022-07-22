@@ -115,7 +115,7 @@ class _AnimalOverallInfoState extends State<_AnimalOverallInfo> with TickerProvi
         _calculateAnimalNamePosition();
 
         return Text(
-          animal.name,
+          animal.commonName,
           key: _targetTextKey,
           style: TextStyle(
             color: Colors.transparent,

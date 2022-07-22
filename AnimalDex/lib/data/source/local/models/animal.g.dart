@@ -29,19 +29,20 @@ class AnimalHiveModelAdapter extends TypeAdapter<AnimalHiveModel> {
       ..phylum = fields[8] as String
       ..classe = fields[9] as String
       ..order = fields[10] as String
-      ..family = fields[11] as String
-      ..genus = fields[12] as String
-      ..imageAuthor = fields[13] as String
-      ..name = fields[14] as String
-      ..id2 = fields[15] as String
-      ..imageUrl2 = fields[16] as String
-      ..xdescription = fields[17] as String;
+      ..suborder = fields[11] as String
+      ..family = fields[12] as String
+      ..genus = fields[13] as String
+      ..imageUrl = fields[14] as String
+      ..dataLink = fields[15] as String
+      ..imageAuthor = fields[16] as String
+      ..conservationState = fields[17] as String
+      ..geographicDistribution = fields[18] as String;
   }
 
   @override
   void write(BinaryWriter writer, AnimalHiveModel obj) {
     writer
-      ..writeByte(18)
+      ..writeByte(19)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -65,23 +66,21 @@ class AnimalHiveModelAdapter extends TypeAdapter<AnimalHiveModel> {
       ..writeByte(10)
       ..write(obj.order)
       ..writeByte(11)
-      ..write(obj.family)
+      ..write(obj.suborder)
       ..writeByte(12)
-      ..write(obj.genus)
-      /*..writeByte()
-      ..write(obj.imageUrl)
-      ..writeByte()
-      ..write(obj.dataLink)*/
+      ..write(obj.family)
       ..writeByte(13)
-      ..write(obj.imageAuthor)
+      ..write(obj.genus)
       ..writeByte(14)
-      ..write(obj.name)
+      ..write(obj.imageUrl)
       ..writeByte(15)
-      ..write(obj.id2)
+      ..write(obj.dataLink)
       ..writeByte(16)
-      ..write(obj.imageUrl2)
+      ..write(obj.imageAuthor)
       ..writeByte(17)
-      ..write(obj.xdescription);
+      ..write(obj.conservationState)
+      ..writeByte(18)
+      ..write(obj.geographicDistribution);
   }
 
   @override

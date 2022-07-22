@@ -11,15 +11,14 @@ class Animal {
     required this.phylum,
     required this.classe,
     required this.order,
+    required this.suborder,
     required this.family,
     required this.genus,
-    /*required this.imageUrl,
-    required this.dataLink,*/
+    required this.imageUrl,
+    required this.dataLink,
     required this.imageAuthor,
-    required this.name,
-    required this.id2,
-    required this.imageUrl2,
-    required this.xdescription,
+    required this.conservationState,
+    required this.geographicDistribution,
   });
 
   final String id;
@@ -33,13 +32,12 @@ class Animal {
   final String phylum;
   final String classe;
   final String order;
+  final String suborder;
   final String family;
   final String genus;
-  /*final String --imageUrl;
-  final String --dataLink;*/
+  final String imageUrl;
+  final String dataLink;
   final String imageAuthor;
-  final String name;
-  final String id2;
-  final String imageUrl2;
-  final String xdescription;
+  final String conservationState;
+  final String geographicDistribution;
 }

@@ -14,14 +14,13 @@ extension AnimalHiveModelX on AnimalHiveModel {
         phylum: phylum.trim(),
         classe: classe.trim(),
         order: order.trim(),
+        suborder: suborder.trim(),
         family: family.trim(),
         genus: genus.trim(),
-        /*--imageUrl
-        --dataLink*/
+        imageUrl: imageUrl.trim(),
+        dataLink: dataLink.trim(),
         imageAuthor: imageAuthor.trim(),
-        name: name.trim(),
-        id2: id2.trim(),
-        imageUrl2: imageUrl2.trim(),
-        xdescription: xdescription.trim(),
+        conservationState: conservationState.trim(),
+        geographicDistribution: geographicDistribution.trim(),
       );
 }

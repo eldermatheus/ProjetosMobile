@@ -107,11 +107,26 @@ class _AnimalBaseStatsState extends State<_AnimalBaseStats> with SingleTickerPro
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          //buildStats(contruir.stats),
           SizedBox(height: 27),
-          Text('Under development')
+          _buildDistribuicao(),
         ],
       ),
+    );
+  }
+
+  Widget _buildDistribuicao() {
+    return _ContentSection(
+      label: 'Países e regiões de ocorrência',
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(6.0),
+          child: Row(
+            children: <Widget>[
+              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

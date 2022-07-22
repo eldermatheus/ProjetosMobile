@@ -30,24 +30,24 @@ class _AnimalInfoCardState extends State<_AnimalInfoCard> {
           paddingAnimation: slideController,
           tabs: [
             MainTabData(
-              label: 'Guia 1',
+              label: 'Taxonomia',
               child: _AnimalAbout(animal),
             ),
             MainTabData(
-              label: 'Guia 2',
+              label: 'Distribuição',
               child: _AnimalBaseStats(animal),
             ),
             MainTabData(
-              label: 'Guia 3',
-              child: Text('Under development'),
+              label: 'Copyright',
+              child: _AnimalCopyright(animal),
             ),
-            MainTabData(
+            /*MainTabData(
               label: 'Guia 4',
               child: Align(
                 alignment: Alignment.topCenter,
                 child: Text('Under development'),
               ),
-            ),
+            ),*/
           ],
         );
       }),

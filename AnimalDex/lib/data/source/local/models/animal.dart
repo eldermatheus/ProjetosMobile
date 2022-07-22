@@ -38,29 +38,26 @@ class AnimalHiveModel extends HiveObject {
   late String order;
 
   @HiveField(11)
-  late String family;
+  late String suborder;
 
   @HiveField(12)
-  late String genus;
-
-  /*@HiveField(13)
-  late String imageUrl;
-
-  @HiveField(14)
-  late String dataLink;*/
+  late String family;
 
   @HiveField(13)
-  late String imageAuthor;
+  late String genus;
 
   @HiveField(14)
-  late String name;
+  late String imageUrl;
 
   @HiveField(15)
-  late String id2;
+  late String dataLink;
 
   @HiveField(16)
-  late String imageUrl2;
+  late String imageAuthor;
 
   @HiveField(17)
-  late String xdescription;
+  late String conservationState;
+
+  @HiveField(18)
+  late String geographicDistribution;
 }

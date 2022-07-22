@@ -29,27 +29,6 @@ class _BoxDecoration extends StatelessWidget {
   }
 }
 
-/* class _DottedDecoration extends StatelessWidget {
-  static const Size size = Size(57, 31);
-
-  final Animation<double> animation;
-
-  const _DottedDecoration({required this.animation});
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedFade(
-      animation: animation,
-      child: Image(
-        image: AppImages.dotted,
-        width: size.width,
-        height: size.height,
-        color: Colors.white30,
-      ),
-    );
-  }
-} */
-
 class _BackgroundDecoration extends StatefulWidget {
   const _BackgroundDecoration();
 

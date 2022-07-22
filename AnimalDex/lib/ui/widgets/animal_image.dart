@@ -29,13 +29,13 @@ class AnimalImage extends StatelessWidget {
     return HeroMode(
       enabled: useHero,
       child: Hero(
-        tag: animal.imageUrl2,
+        tag: animal.imageUrl,
         child: AnimatedPadding(
           duration: Duration(milliseconds: 600),
           curve: Curves.easeOutQuint,
           padding: padding,
           child: CachedNetworkImage(
-            imageUrl: animal.imageUrl2,
+            imageUrl: animal.imageUrl,
             imageRenderMethodForWeb: ImageRenderMethodForWeb.HtmlImage,
             useOldImageOnUrlChange: true,
             maxWidthDiskCache: _cacheMaxSize.width.toInt(),

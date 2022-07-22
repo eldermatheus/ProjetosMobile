@@ -15,13 +15,12 @@ extension GithubAnimalModelToLocalX on GithubAnimalModel {
     ..phylum = phylum.trim()
     ..classe = classe.trim()
     ..order = order.trim()
+    ..suborder = suborder.trim()
     ..family = family.trim()
     ..genus = genus.trim()
-    /*..imageUrl =  .trim()
-    ..dataLink =  .trim()*/
+    ..imageUrl = imageUrl.trim()
+    ..dataLink = dataLink.trim()
     ..imageAuthor = imageAuthor.trim()
-    ..name = name.trim()
-    ..id2 = id2.trim()
-    ..imageUrl2 = imageUrl2.trim()
-    ..xdescription = xdescription.trim();
+    ..conservationState = conservationState.trim()
+    ..geographicDistribution = geographicDistribution.trim();
 }

@@ -55,11 +55,11 @@ class AnimalCard extends StatelessWidget {
   }
 
   Widget _buildAnimal({required double height}) {
-    final animalSize = height * _animalFraction;
-
+    //final animalSize = height * _animalFraction;
+    final animalSize = height;
     return Positioned(
-      bottom: -2,
-      right: 2,
+      bottom: 0,
+      right: 0,
       child: AnimalImage(
         size: Size.square(animalSize),
         animal: animal,
@@ -69,12 +69,12 @@ class AnimalCard extends StatelessWidget {
 
   Widget _buildAnimalNumber() {
     return Positioned(
-      top: 10,
-      right: 14,
+      top: 13,
+      right: 8,
       child: Text(
         animal.id,
         style: TextStyle(
-          fontSize: 14,
+          fontSize: 13,
           fontWeight: FontWeight.bold,
           color: Colors.white,
         ),
@@ -93,17 +93,17 @@ class _CardContent extends StatelessWidget {
     return Align(
       alignment: Alignment.centerLeft,
       child: Padding(
-        padding: EdgeInsets.fromLTRB(16, 24, 16, 16),
+        padding: EdgeInsets.fromLTRB(10, 24, 16, 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             Hero(
-              tag: animal.id + animal.name,
+              tag: animal.id + animal.commonName,
               child: Text(
                 animal.commonName,
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 13,
                   height: 0.1,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
