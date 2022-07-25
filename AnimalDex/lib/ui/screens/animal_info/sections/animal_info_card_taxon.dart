@@ -30,28 +30,8 @@ class _ContentSection extends StatelessWidget {
           label,
           style: TextStyle(height: 0.8, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 22),
+        SizedBox(height: 10),
         if (children != null) ...children!
-      ],
-    );
-  }
-}
-
-class _TextIcon extends StatelessWidget {
-  final ImageProvider icon;
-  final String text;
-
-  const _TextIcon(this.icon, this.text);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Image(image: icon, width: 12, height: 12),
-        SizedBox(width: 4),
-        Text(text, style: TextStyle(height: 0.8)),
       ],
     );
   }
@@ -79,7 +59,7 @@ class _AnimalAbout extends StatelessWidget {
       },
       child: Column(
         children: <Widget>[
-          SizedBox(height: 28),
+          SizedBox(height: 24),
           _buildAnimal(),
         ],
       ),

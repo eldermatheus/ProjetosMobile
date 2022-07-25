@@ -107,8 +107,10 @@ class _AnimalBaseStatsState extends State<_AnimalBaseStats> with SingleTickerPro
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          SizedBox(height: 27),
+          SizedBox(height: 10),
           _buildDistribuicao(),
+          SizedBox(height: 60),
+          _buildEstadoConservacao()
         ],
       ),
     );
@@ -123,6 +125,22 @@ class _AnimalBaseStatsState extends State<_AnimalBaseStats> with SingleTickerPro
           child: Row(
             children: <Widget>[
               Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildEstadoConservacao() {
+    return _ContentSection(
+      label: 'Estado de conservação:',
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(6.0),
+          child: Row(
+            children: <Widget>[
+              Expanded(flex: 2, child: Text('${animal.conservationState}')),
             ],
           ),
         ),

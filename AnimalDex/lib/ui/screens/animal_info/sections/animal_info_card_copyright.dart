@@ -107,7 +107,7 @@ class _AnimalCopyrightState extends State<_AnimalCopyright> with SingleTickerPro
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
-          SizedBox(height: 27),
+          SizedBox(height: 10),
           _buildDistribuicao(),
         ],
       ),
@@ -122,7 +122,8 @@ class _AnimalCopyrightState extends State<_AnimalCopyright> with SingleTickerPro
           padding: const EdgeInsets.all(6.0),
           child: Row(
             children: <Widget>[
-              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
+              Expanded(flex: 2, child: _Label('Classificador:')),
+              Expanded(flex: 2, child: Text('${animal.author}')),
             ],
           ),
         ),
@@ -130,7 +131,8 @@ class _AnimalCopyrightState extends State<_AnimalCopyright> with SingleTickerPro
           padding: const EdgeInsets.all(6.0),
           child: Row(
             children: <Widget>[
-              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
+              Expanded(flex: 2, child: _Label('Autor da imagem:')),
+              Expanded(flex: 2, child: Text('${animal.imageAuthor}')),
             ],
           ),
         ),
@@ -138,7 +140,8 @@ class _AnimalCopyrightState extends State<_AnimalCopyright> with SingleTickerPro
           padding: const EdgeInsets.all(6.0),
           child: Row(
             children: <Widget>[
-              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
+              Expanded(flex: 2, child: _Label('Fonte da imagem:')),
+              Expanded(flex: 2, child: Text('${animal.dataLink}')),
             ],
           ),
         ),
@@ -146,23 +149,8 @@ class _AnimalCopyrightState extends State<_AnimalCopyright> with SingleTickerPro
           padding: const EdgeInsets.all(6.0),
           child: Row(
             children: <Widget>[
-              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Row(
-            children: <Widget>[
-              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(6.0),
-          child: Row(
-            children: <Widget>[
-              Expanded(flex: 2, child: Text('${animal.geographicDistribution}')),
+              Expanded(flex: 2, child: _Label('Origem de táxon:')),
+              Expanded(flex: 2, child: Text('${animal.nameAuthority}')),
             ],
           ),
         ),
