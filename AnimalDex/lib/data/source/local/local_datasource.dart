@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:animaldex/data/source/local/models/animal.dart';
 import 'package:animaldex/data/source/local/models/animal.g.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class LocalDataSource {
   static Future<void> initialize() async {
