@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
     if (!_scrollController.hasClients) return;
 
     final offset = _scrollController.offset;
-    final showTitle = offset > _HeaderCardContent.height - kToolbarHeight;
+    final showTitle = offset > HeaderCardContent.height - kToolbarHeight;
 
     // Prevent unneccesary rebuild
     if (this.showTitle == showTitle) return;
@@ -49,6 +49,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: _HeaderCardContent());
+    return Scaffold(
+      body: HeaderCardContent(),
+    );
   }
 }

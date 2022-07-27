@@ -28,4 +28,14 @@ void main() async {
     final animal = await repository.getAnimal('114353');
     expect(animal, equals(isNotNull));
   });
+
+  test('Verifica se o arquivo json local é nulo', () {
+    final jsonLocalDataSource = repository.localDataSource;
+    expect(jsonLocalDataSource, equals(isNotNull));
+  });
+
+  test('Verifica se o arquivo json do GitHub é nulo', () {
+    final jsonRemoteDataSource = repository.githubDataSource;
+    expect(jsonRemoteDataSource, equals(isNotNull));
+  });
 }

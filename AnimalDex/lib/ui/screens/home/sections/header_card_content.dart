@@ -1,6 +1,6 @@
 part of '../home.dart';
 
-class _HeaderCardContent extends StatelessWidget {
+class HeaderCardContent extends StatelessWidget {
   static const double height = 582;
 
   void _onSelectCategory(Category category) {
@@ -34,7 +34,7 @@ class _HeaderCardContent extends StatelessWidget {
         padding: EdgeInsets.all(28),
         alignment: Alignment.bottomLeft,
         child: Text(
-          'Bem vindo ao \nAnimalDex',
+          "Bem vindo ao \nAnimalDex",
           style: TextStyle(
             fontSize: 30,
             height: 1.6,
